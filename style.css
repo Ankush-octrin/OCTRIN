@@ -1,0 +1,475 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: clamp(15px, 2.5vw, 18px);
+  background-color: #121212;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling (starts) */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  background-color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px #242424E3;
+}
+
+/* Logo Decoration (starts) */
+
+header #logo{
+  letter-spacing: 1px;
+  font-size: clamp(24px, 6vw, 40px);
+}
+
+/* Logo Decoration (ends) */
+
+/* Menu button Styling (starts) */
+
+#menu {
+  background-color: white;
+  border-style: solid;
+  border-color: lightyellow;
+  font-size: clamp(14px, 3vw, 18px);
+  padding: 8px 12px;
+  border-radius: 1vw;
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+/* Menu button Styling (ends) */
+
+/* Header Styling (ends) */
+
+
+
+/* Body Styling (starts) */
+
+/* Handling the visibility of all Sections */
+
+main section{
+  display: none;
+  color: white;
+  padding: 20px;
+}
+
+
+/* Motivational Quotes (starts)*/
+
+#quotes {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 115%;
+  margin: 10% 0 10% 0;
+}
+
+/* Motivational Quotes (ends)*/
+
+
+/* Handling all normal texts */
+
+.text {
+  line-height: 1.6;
+}
+
+
+/* Handles Primary Class */
+
+.primary {
+  color: #00c853;
+}
+
+/* Handles Secondary Class */
+
+.secondary {
+  color: #2196F3;
+}
+
+
+/* Styling the Home Section (starts)*/
+
+/* Cards Styling (starts) */
+
+#home #f_content {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+#f_content div {
+  scroll-snap-align: center;
+  flex: 0 0 220px;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 1px 0px 4px 4px #1C1C1CD9;
+  transition: transform 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+#f_content div:hover {
+  transform: translateY(-4px);
+}
+
+/* Cards Styling (ends) */
+
+
+
+/* Games Styling (starts) */
+
+#games {
+  margin-top: 5%;
+}
+
+
+/* Making Game Cards (starts)*/
+
+#gameIn {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding: 3%;
+  margin: 10px;
+}
+
+#gameIn div {
+  scroll-snap-align: center;
+  flex: 0 0 230px;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 1px 0px 4px 4px #1C1C1CD9;
+  transition: transform .3s ease-out, border-color .3s ease-out;
+}
+
+#gameIn div:hover {
+  border: solid orange 2px;
+  transform: translateY(-4px);
+}
+
+/* Making Game Cards (ends)*/
+
+
+
+/* Number Guessing Game (starts)*/
+
+#guess_game {
+  
+}
+
+#games .primary {
+  text-align: center;
+}
+
+#games .secondary {
+  margin-bottom: 20px;
+}
+
+#guessPlay {
+  gap: 16px;
+  margin-top: 10px;
+}
+
+#guessPlay #help {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#guessPlay #input {
+  border: solid black 3px;
+  padding: 2px;
+  border-radius: 2vw;
+}
+
+#guessPlay #guess {
+  background-color: #00FF13;
+  border: solid #00FF13 2px;
+  font-size: 116%;
+  font-weight: bold;
+  border-radius: 1vw;
+}
+
+#guessPlay #reset {
+  background-color: #FF3A3A;
+  border: solid #FF3A3A 2px;
+  font-size: 116%;
+  font-weight: bold;
+  border-radius: 1vw;
+}
+
+/* Number Guessing Game (ends)*/
+
+
+
+/* Rock Paper and Scissors Game (starts)*/
+
+#rpsGame {
+  gap: 16px;
+  margin-top: 2%;
+}
+
+#rpsGame #input2 {
+  border: solid black 2px;
+  padding: 3px;
+  border-radius: 2vw;
+}
+
+#rpsGame #btn {
+  background-color: #00FF13;
+  border: solid #00FF13 2px;
+  font-size: 116%;
+  font-weight: bold;
+  border-radius: 1vw;
+}
+
+/* Rock Paper and Scissors Game (ends)*/
+
+/* Games Styling (ends) */
+
+
+
+/* Chatbot (starts) */
+
+#chatbot {
+  margin-top: 15%;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 2;
+}
+
+#chatbot #arjuna {
+  display: flex;
+  justify-self: center;
+  margin-top: 3%;
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 113%;
+  border: solid lightgrey 2px;
+  border-radius: 1vw;
+}
+
+#chatbot #arjuna:hover {
+  background-color: black;
+  color: white;
+  border-color: orange;
+}
+
+/* Chatbot (ends) */
+
+
+
+/* Gallery (Starts)  */
+
+/* UPLOAD SECTION */
+
+#uploadSection{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+
+#uploadImage{
+    color:white;
+    background:#1E1E1E;
+    padding:8px;
+    border-radius:10px;
+    border:1px solid #333;
+}
+
+#uploadBtn{
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#uploadBtn:hover{
+    background:#00a844;
+}
+
+.deletePost{
+    background:#ff3b30;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:15px;
+}
+
+.deletePost:hover{
+    background:#d92b22;
+}
+
+#uploadedImages{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-bottom:30px;
+}
+    /* Profile (starts) */
+    
+    
+    .image-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1% 0 10% 0;
+        box-sizing: border-box;
+        gap: 5px;
+        background: #1E1E1E;
+        padding: 10px;
+        border-radius: 18px;
+        
+    }
+    
+    .image-box:hover {
+        
+    }
+    
+    .profile {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid lightgrey 2px;
+        border-radius: 100%;
+    }
+    
+    .image-box a img {
+        margin: auto;
+        width: 100%;
+        display: block;
+        aspect-ratio: 4/5;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    
+    .navigation button {
+        border: solid black 2px;
+        background-color: white;
+        border-radius: 1vw;
+        padding: 3px;
+        font-size: 105%;
+        margin-right: 2%;
+    }
+    
+    /* Profile (Ends) */
+
+/* Gallery (Ends) */
+
+
+/* Vidoe Styling Starts */
+
+/* The outer card */
+
+  .iframe-card {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 12px;
+}
+
+/* Responsive container to fix the aspect ratio and prevent clipping */
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* The title text below the video */
+  .iframe-title {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+
+/* Footer (starts) */
+
+footer label {
+  color: white;
+}
+
+footer label:hover {
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+footer {
+  background-color: black;
+  word-spacing: 5px;
+  position: absolute;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 110%;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: translateY(-4px);
+  text-decoration: underline;
+}
+
+/* Footer (ends) */
+

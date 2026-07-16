@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OCTRIN</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header>
+    <div id="banner">
+      <h1 id="logo">OCTRIN</h1>
+    </div>
+    <select name="menu" id="menu">
+      <option value="home">Home</option>
+      <option value="gallery">Photos</option>
+      <option value="video">Videos</option>
+      <option value="about">About</option>
+    </select>
+  </header>
+  
+  <main>
+    
+  <section id="home">
+    
+    <!-- Introduction + Motivation -->
+    <div id="quotes">
+      <p id="motivation"></p>
+    </div>
+    
+    <!-- Cards -->
+    
+    <div id="f_content">
+      <div id="c_one">
+        <p class="primary"><b>Learn Programming</b></p>
+        <p id="c_one_c" class="secondary">Programming is a way to communicate with the computers. Computer understands only binary language (i.e. only 0s and 1s).</p>
+      </div>
+      <div id="c_two">
+        <p class="primary"><b>Latest YouTube Videos</b></p>
+        <p id="c_two_c" class="secondary">Learning through visualization is really very entertaining and YouTube videos are really great for this.</p>
+      </div>
+      <div id="c_three">
+        <p class="primary"><b>Mini Projects</b></p>
+      <p id="c_three_c" class="secondary">Making mini projects after learning a programming language is genuinely a must to do thing.</p>
+      </div>
+      <div id="c_four">
+        <p class="primary"><b>Coding Quiz</b></p>
+      <p id="c_four_c" class="secondary">Let us have a quiz of the programming language that you have recently leanrt. Are you ready for this?</p>
+      </div>
+      <div id="c_five">
+        <p class="primary"><b>Find the Bug</b></p>
+      <p id="c_five_c" class="secondary">Finding bugs in a program is really very helpful in almost everywhere, including your exams, coding interviews, etc.</p>
+      </div>
+    </div>
+    
+    <!-- Gaming Section -->
+    
+    <div id="games">
+      <h1 class="primary">Games Section</h1>
+      <div id="gameIn">
+        
+      <div id="guess_game">
+        <h2 class="secondary">Guess•Number</h2>
+        
+      <select name="level" id="level">
+      <option value="Easy">Easy</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Hard">Hard</option>
+      <option value="Expert">Expert</option>
+      <option value="God Level">God Level</option>
+    </select>
+  
+  
+    <div id="guessPlay">
+    
+    <p id="help"></p>
+    <p id="result"></p>
+    <input type="text" id="input" placeholder="Guess the Number...">
+    <button id="guess">Guess</button>
+    <button id="reset">Reset</button>
+  </div>
+  
+      </div>
+      
+      <!-- Rock Paper and Scissors Game -->
+      
+      <div id="rpsGame">
+        <h2 class="secondary">Rock•Paper•Scissor</h2>
+            <input type="text" name="input" id="input2" placeholder="Rock, Paper or Scissor...">
+    <p id="result2"></p>
+    <button id="btn">Challenge</button>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Arjuna The Chatbot -->
+    
+    <div id="chatbot">
+      <h2 class="primary">Feeling Lonely</h2>
+      <p class="text">Being honest, then i had created Arjuna just to get rid of loneliness. So if you want to have a reliable and trustable best friend then you can always trust on Arjuna.</p>
+      <button id="arjuna">Arjuna</button>
+    
+    
+  </section>
+  
+  
+<section id="gallery">
+
+  <div id="uploadSection">
+
+    <input type="file" id="uploadImage" accept="image/*">
+
+    <button id="uploadBtn">Upload Image</button>
+
+  </div>
+
+  <div id="uploadedImages"></div>
+
+  <!-- Existing Image 1 -->
+
+  <div class="image-box">
+    <div class="profile">
+      <img src="https://i.ibb.co/jnyNYQ0/one.png" alt="profile">
+      <label>Uploaded on OCTRIN</label>
+    </div>
+
+    <a href="https://i.ibb.co/zwk2qY3/1.jpg">
+      <img src="https://i.ibb.co/zwk2qY3/1.jpg" alt="img">
+    </a>
+
+    <div class="navigation">
+      <button class="imgLike">&#9825; Like</button>
+      <button class="imgComment">💬 Comment</button>
+      <button class="imgShare">🔗 Share</button>
+    </div>
+
+  </div>
+
+  <!-- Existing Image 2 -->
+
+  <div class="image-box">
+    <div class="profile">
+      <img src="https://i.ibb.co/jnyNYQ0/one.png" alt="profile">
+      <label>Uploaded on OCTRIN</label>
+    </div>
+
+    <a href="https://i.ibb.co/sdPJh2N8/10.jpg">
+      <img src="https://i.ibb.co/sdPJh2N8/10.jpg" alt="img">
+    </a>
+
+    <div class="navigation">
+      <button class="imgLike">&#9825; Like</button>
+      <button class="imgComment">💬 Comment</button>
+      <button class="imgShare">🔗 Share</button>
+    </div>
+
+  </div>
+
+</section>
+  
+  
+  <section id="video">
+  <!--   video one -->
+    
+    <div class="iframe-card">
+      
+      <div class="iframe-container">
+      
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/Q0wsHFF1uKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+    </div>
+      
+      <h3 class="video-title">How does a 670 lines of clean code looks like?</h3>
+      </div>
+      
+      <!-- video two -->
+      
+      <div class="iframe-card">
+      
+      <div class="iframe-container">
+      
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/NgSmB7iqtsA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      
+      <h3 class="video-title">Created a simple ROCK, PAPER and Scissors game.</h3>
+</div>
+      
+      <!-- video three -->
+      
+      <div class="iframe-card">
+        
+      <div class="iframe-container">
+        
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/QE5LNnFScvo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3 class="video-title">Created a Digital Clock Webpage using HTML, CSS and JS</h3>
+</div>
+      
+      <!-- video four -->
+      
+      <div class="iframe-card">
+      
+      <div class="iframe-container">
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/UtOWEce0gyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <h3 class="video-title">Can you check the armstrong numbers faster than this C program.</h3>
+</div>
+
+      <!-- video five -->
+      
+      <div class="iframe-card">
+      
+      <div class="iframe-container">
+        
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/c-5raMNPEBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <h3 class="video-title">Can you find the bug in this C code before the timer ends?</h3>
+</div>
+      
+      <!-- video six -->
+      
+      <div class="iframe-card">
+        
+        <div class="iframe-container">
+        
+      <iframe width="315" height="560" src="https://www.youtube.com/embed/Bk6vIH6LdI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      
+    <h3 class="video-title">Let us identify Strong numbers using C language.</h3>
+</div>
+    
+  </section>
+  
+  
+  <section id="about">
+  <h2 class="primary">About OCTRIN</h2>
+  <p class="text">Welcome to <strong>OCTRIN</strong>! This platform was built from the ground up to make the world of programming interactive, engaging, and accessible for everyone. We believe that learning to code shouldn't just be about staring at dense textbooks or dry documentation. Instead, OCTRIN combines education with hands-on practice, gamification, and creative tools to help you level up your skills seamlessly.</p>
+  
+  <br>
+  <p class="text">Whether you are just starting out and trying to understand how computers process binary logic, building your very first frontend mini-projects, or testing your knowledge with a rapid-fire coding quiz, this space is designed to support your developer journey every step of the way.</p>
+  
+  <br>
+  <h2 class="secondary">Who Am I?</h2>
+  <p class="text">Hi, I'm Ankush Raj, the independent creator and developer behind OCTRIN. I built this entire project to bring together my passion for web development, software engineering, and content creation. Alongside coding, I run the Octrin YouTube channel, where I break down programming concepts through highly visual tutorials and Shorts. This website acts as the central hub for everything I create, bridging the gap between watching a tutorial and actually interacting with the code.</p>
+  
+  <br>
+  <h2 class="secondary">More Than Just Code</h2>
+  <p class="text">We all know that hours of debugging can get exhausting, which is why OCTRIN is built to be more than just a strict learning environment. When you need a break from syntax, you can dive into our built-in Games Section to challenge your logic, or browse through the dynamic Photos gallery. </p>
+  
+  <br>
+  <p class="text">Furthermore, this platform features Arjuna—a dedicated chatbot I originally built as a personal project to combat loneliness and provide a reliable, conversational space. OCTRIN is a constantly evolving ecosystem, and I am always working behind the scenes to add new features, fix bugs, and optimize the experience across all devices. Thank you for being here, and feel free to connect with me through any of my social links in the footer below!</p>
+</section>
+
+
+  
+  </main>
+  
+  <footer>
+    <label for="octrin">@octrin</label>
+    <a href="https://youtube.com/@octrinyt?si=FfbIXBzweHBHIgaN">YouTube</a>
+    <a href="https://www.instagram.com/ankush_raj5/?hl=en">Instagram</a>
+    <a href="https://www.linkedin.com/in/ankush-raj-105649412?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+    <a href="https://github.com/Ankush-octrin">GitHub</a>
+    <a href="mailto:ankush2r@gmail.com">Email</a>
+  </footer>
+      
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
